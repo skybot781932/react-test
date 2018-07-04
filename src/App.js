@@ -50,10 +50,22 @@ class App extends Component {
           <input type="text" className="e-input" value={this.state.value} onChange={this.handleChange} placeholder="Search" />
           <input className="e-btn" type="submit" value="Submit" />
         </form>
-        <div>
-        {
-          this.state.results.map((item) => item.name)
-        }
+        <div className="l-results">
+          {
+            Object.keys(this.state.results).map((i) => (
+              <div className="b-result" key={i}>
+                <a className="b-result__title" href={this.state.results[i].url}>
+                  {this.state.results[i].title}
+                </a>
+                <span className="b-result__description">
+                  {this.state.results[i].description}
+                </span>
+                <a className="btn btn-primary btn-sm b-result__btn" href={this.state.results[i].url}>
+                  Read more
+                </a>
+              </div>
+            ))
+          }
         </div>
 
       </div>

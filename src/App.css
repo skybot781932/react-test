@@ -16,3 +16,34 @@
 .App-intro {
   font-size: large;
 }
+
+.l-results{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.b-result{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  padding: 4px 0;
+}
+.b-result__title{
+
+}
+.b-result__title:hover{
+  transition: 0.3s cubic-bezier(0.23, 1, 0.320, 1) color;
+}
+.b-result__description{
+  font-size: 9px;
+}
+
+.b-result__btn{
+  margin-top:4px;
+  align-self: flex-start;
+}
