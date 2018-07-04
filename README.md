@@ -1,7 +1,3 @@
-# help-tech-test
-
-Welcome to the Sky Help unattended test.
-
 ## Getting Started
 
 ### Dependencies
