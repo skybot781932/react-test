@@ -21,9 +21,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">help-tech-test</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <form onSubmit={this.handleSubmit}>
+          <input type="search" placeholder="Search" value={this.state.value} onChange={this.handleChange} />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   }
