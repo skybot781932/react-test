@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Help Unattended Test</h1>
+          <h1 className="App-title">Sky Help Unattended Test</h1>
         </header>
         <form className="form-inline" onSubmit={this.handleSubmit}>
           <div className="form-group mx-sm-3 mb-2">
